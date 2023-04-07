@@ -1,3 +1,2 @@
 # html-css-basics
--HTML Learning, Activity, and Practice
--CSS Learning, Activity, and Practice
+Learning, applying, and practicing the basics of HTML and CSS.

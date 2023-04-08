@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CSS Activity 01</title>
+    <title>CSS Activity 03</title>
 
     <style>
         /* 
@@ -47,33 +47,34 @@
             color: gray;
         }
 
-        * {
+        :root {
             background-color: rgb(43, 43, 43);
         }
 
-        ul {
-            list-style: none;
-        }
-
-        ul li::before {
-            content: "\2022";
+        ul li {
             color: white;
         }
 
+        ul li span{
+            color: orange;
+        }
+
+        /* ul li::before {
+            content: "*";
+            color: white;
+        } */
+
         ul li:first-child {
             background-color: maroon;
-            color: orange;
         }
 
         ul li:nth-child(2){
             background-color: turquoise;
             font-size: x-small;
-            color: orange;
         }
 
         ul li:last-child {
             background-color: green;
-            color: orange;
         }
 
         
@@ -85,9 +86,9 @@
     
     <div id="list">
         <ul>
-            <li>Projects</li>
-            <li>Contact</li>
-            <li>Help</li>
+            <li><span>Projects</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Help</span></li>
         </ul>
     </div>
 

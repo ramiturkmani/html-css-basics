@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,23 @@
     <title>Forms Basics</title>
     <style>
         * {
-            border-radius: 3px;
+            border-radius: 5px;
+            border-width: 1px;
         }
 
         form {
             border: solid 1px;
             width: 700px;
-            padding: 5px;
+            padding: 30px 10px;
         }
 
         div {
-            margin-bottom: 10px;
-        }
-
-        input {
-            /* width: 100%; */
-            padding: 5px;
-            /* border-width: 0.5px; */
+            margin-bottom: 20px;
         }
 
     </style>
 </head>
+
 <body>
     <h1>Forms</h1>
     <form>
@@ -45,34 +42,34 @@
         <div>
             <label for="fname">First name</label>
             <!-- <input type="text" id="fname" /> -->
-            <input type="text" id="fname" placeholder="first_name"/>
+            <input type="text" id="fname" placeholder="first_name" />
         </div>
 
         <div>
             <label for="lname">Last name</label>
             <!-- <input type="text" id="lname" /> -->
-            <input type="text" id="lname" placeholder="last_name"/>
+            <input type="text" id="lname" placeholder="last_name" />
         </div>
 
         <div>
             <label for="email">Email</label>
             <!-- <input type="email" /> -->
-            <input type="email" id="email" placeholder="email"/>
+            <input type="email" id="email" placeholder="email" />
         </div>
 
         <div>
             <label for="pnumber">Phone number</label>
-            <input type="text" id="pnumber" placeholder="phone"/>
+            <input type="text" id="pnumber" placeholder="phone" />
         </div>
 
         <div>
             <label for="zipcode">Zip Code</label>
-            <input type="text" id="zipcode" placeholder="zipcode"/>
+            <input type="text" id="zipcode" placeholder="zipcode" />
         </div>
 
         <div>
             <label for="pass">Password</label>
-            <input type="password" id="pass" placeholder="password"/>
+            <input type="password" id="pass" placeholder="password" />
             <!-- <input type="password" pattern="[1-9][a-z]"/> -->
         </div>
 
@@ -91,15 +88,18 @@
         </div>
 
         <div>
-            <input type="checkbox" id="terms"/>
+            <input type="checkbox" id="terms" />
             <label for="terms">I agree to the <a href="">terms and conditions</a></label>
         </div>
 
         <div>
-            <button style="background-color: blue; color: white; border: none; padding: 5px;">Submit</button>
+            <button
+                style="background-color: blue; color: white; border: none; 
+                padding: 5px 10px;">Submit</button>
         </div>
 
     </form>
 
 </body>
+
 </html>

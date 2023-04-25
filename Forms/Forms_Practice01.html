@@ -39,8 +39,60 @@
             padding-left: 15px;
         }
 
-        .checkbox input {
-            
+        a {
+            color: red;
+        }
+
+        /* CHECKBOX */
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 100;
+            height: 22px;
+            width: 22px;
+            background-color: #eee;
+            border-radius: 3px;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: red;
+        }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 7px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
     </style>
 </head>
@@ -87,9 +139,11 @@
         <input type="text" placeholder="Password" id="password"> 
     </div>
 
-    <div class="checkbox">
-        <input type="checkbox">
-        <label>I agree to the terms</label>
+    <div class="terms">
+        <label class="container">
+            <input type="checkbox" checked><span class="checkmark"></span>
+            I agree to the terms <a href="">Terms</a> and <a href="">Privacy Policy</a>.
+        </label>
     </div>
 </body>
 

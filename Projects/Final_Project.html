@@ -25,38 +25,55 @@
             background-color:coral;
         }
 
-        .teams {
+        .topTeams {
             display: flex;
             flex-direction: row;
-            gap: 20px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .bottomTeams {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
         }
 
         .scores {
             display: flex;
             flex-direction: row;
-            gap: 20px;
             background-color: lightseagreen;
+            width: 100%;
+            justify-content: space-between;
         }
+
     </style>
 </head>
 <body>
     <h1>LIVE SCORES</h1>
     <div class="header">
-        <div class="teams">
-            <div>Bulls</div>
-            <div>Clippers</div>
-            <div>Bucks</div>
-            <div>Lakers</div>
-            <div>Heat</div>
+        <div class="topTeams">
+            <div>Bulls: 12</div>
+            <div>Clippers: 43</div>
+            <div>Celtics : 65</div>
+            <div>Lakers: 110</div>
+            <div>Heat: 101</div>
+        </div>
+        <div class="bottomTeams">
+            <div>Bucks: 20</div>
+            <div>Raptops: 32</div>
+            <div>Nuggets: 68</div>
+            <div>Pacers: 96</div>
+            <div>Nets: 122</div>
         </div>
         <div class="scores">
-            <div>Bulls</div>
-            <div>Clippers</div>
-            <div>Bucks</div>
-            <div>Lakers</div>
-            <div>Heat</div>
+            <div>1st 1:34</div>
+            <div>2nd 3:59</div>
+            <div>3rd 6:42</div>
+            <div>Final</div>
+            <div>Final</div>
         </div>
-        
+
     </div>
 </body>
 </html>
